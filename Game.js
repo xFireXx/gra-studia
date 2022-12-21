@@ -5,6 +5,9 @@ class Game {
      this.wallet = new Wallet(start);
    
      document.getElementById('start').addEventListener('click', this.startGame.bind(this));
+     document.getElementById('reset').addEventListener('click', function() {
+        location.reload();
+     })
      this.spanWallet = document.querySelector('.panel span.wallet');
      this.boards = [...document.querySelectorAll('div.color')];
      this.inputBid = document.getElementById('bid');
@@ -59,5 +62,7 @@ class Game {
    
     }
    }
-   
-   
+
+
+  
+    

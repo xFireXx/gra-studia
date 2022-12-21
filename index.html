@@ -18,12 +18,12 @@
           <div class="color"></div>
         </section>
 
-        <section class="play">
-          <input type="number" placeholder="Podaj ile masz środków" id="bid" style="width: 492px">
+        <section class="play srodkiStart">
+          <input type="number" placeholder="Podaj ile masz środków" id="srodkiPoczatkowe" style="width: 492px">
           <button id="startGame">Graj!</button>
         </section>
 
-        <section class="play d-none">
+        <section class="play stawka d-none">
           <input type="number" placeholder="Podaj stawkę" id="bid">
           <button id="start">Zakręć!</button>
         </section>
@@ -45,11 +45,16 @@
                 </div>
               </section>
         </section>
-    
+        <section class="play">
+          <button id="reset">Resetuj grę!</button>
+        </section>
         
     
       </div>
       <script src="Wallet.js"></script>
+      
+      <script src="Theme.js"></script>
+      <script src="Blue.js"></script>
       <script src="Statistics.js"></script>
       <script src="Draw.js"></script>
       <script src="Result.js"></script>
